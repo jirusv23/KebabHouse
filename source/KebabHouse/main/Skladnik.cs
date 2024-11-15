@@ -1,13 +1,12 @@
-﻿using System.Runtime.InteropServices;
-
-namespace main
+﻿namespace main
 {
     internal class Skladnik
     {
-        
-        public int DoplnitZasobu(string zasobaCoDoplnit, int pocetCoDoplnit)
+
+        public void PridatDoSkladu(Sklad sklad, string surovina, int pocetPridaneSuroviny)
         {
-            return 65;
+            sklad[surovina] += pocetPridaneSuroviny;
         }
+
     }
 }
